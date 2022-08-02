@@ -1,0 +1,152 @@
+/* Idea adapted from: https://www.youtube.com/watch?v=-c4aCe1EawA */
+
+.student-cards {
+    line-height: 1em;
+    position: relative;
+    min-width: 425px;
+    background-color: rgba(55, 98, 156, 1); /*#37629c; */
+    padding: 20px;
+    box-shadow: 5px 25px 40px rgba(0,0,0,0.3);
+}
+
+.student-cards::before {
+    content:'';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: calc(100% - 85px);
+    height: 100%;
+    background: #fff;
+}
+
+.student-cards .student-card {
+	  position: relative;
+    display: flex;
+    align-items: center;
+    padding: 5px 5px 5px 5px;
+}
+
+.student-cards .student-card::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(55, 98, 156, 1); /*#37629c; */
+    background-image: none;
+    transition: transform 0.5s;
+    transform: scaleX(0);
+    transform-origin: right;
+
+}
+
+.student-cards .student-card:hover::before {
+    transition: transform 0.5s;
+    transform: scaleX(1);
+    transform-origin: left;
+    background-image: linear-gradient(90deg, rgba(55, 98, 156, 1) 0%, rgba(164, 191, 239, 0.7) 74%); /* #a4bfef */
+}
+
+#content:not(.portfolio) .student-card figure.student-image {
+    position: relative;
+    min-width: 100px;
+    height: 100px;
+    background: #fff;
+    overflow: hidden;
+    border: 3px solid #eee;
+    box-shadow:     0 1px 0 hsl(174,5%,78%),
+                     0 2px 0 hsl(174,5%,70%),
+	                   0 0 5px rgba(0,0,0,.05),
+	                   0 1px 3px rgba(0,0,0,.2),
+	                   0 3px 5px rgba(0,0,0,.2),
+	                   0 5px 10px rgba(0,0,0,.2);
+    margin-right: 20px;
+    margin-left: 10px;
+}
+#content:not(.portfolio) .student-card figure.student-image img {
+    object-fit: cover;
+    /*object-position: 50% 50%;*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+/*    height: 10em;*/
+    border: 0.1em inset black;
+}
+
+.student-card .student-content {
+	  position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    color: #333;
+    
+}
+
+.student-card .student-content .student-name {
+    font-size: 1.05em;
+	  text-transform: uppercase;
+    font-weight: bold;
+    margin: 10px 0;
+    text-shadow: none;
+}
+
+.student-card:hover .student-content .student-name {
+  text-shadow:     0 1px 0 hsl(174,5%,78%),
+                   0 2px 0 hsl(174,5%,70%),
+	                 0 0 5px rgba(0,0,0,.05),
+	                0 1px 3px rgba(0,0,0,.2),
+	                0 3px 5px rgba(0,0,0,.2),
+	               0 5px 10px rgba(0,0,0,.2);
+}
+
+.student-card .student-content .student-comment {
+    position: absolute;
+    right: 0;
+    font-size: 1.5em;
+    color: #fff;
+    transform: scale(0);
+    transition: 0.5s; 
+    text-align: right;
+}
+
+.student-card .student-content .student-comment small {
+    font-weight: 500;
+    font-size: 50%;
+}
+
+.student-card:hover .student-content .student-comment {
+    transform: scale(1);
+
+}
+
+
+.student-card .student-content p {
+    box-sizing: border-box;
+    text-align: left;
+    line-height: 1.2em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: 0.5s;
+    font-size: 0.85em;
+    padding-right: 30%;
+}
+
+.student-card:hover .student-content {
+    color: #fff;
+    transition: 0.5s;
+}
+
+
+.students .student {
+    clear: both;
+    margin-bottom: 5px;
+    min-height: 5em;
+}
+
+.students li p {
+    line-height: 1em;
+    margin-bottom: .5em;
+}
+

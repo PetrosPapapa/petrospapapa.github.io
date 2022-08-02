@@ -1,0 +1,198 @@
+hr, .center {
+    clear: both;
+}
+
+.center * {
+    text-align: center; 
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+p:empty { 
+    /* see https://discourse.gohugo.io/t/empty-p-p-tags-generated-when-using-shortcodes/3439 */
+    display: none;
+    margin: 0;
+}
+
+#content a .icon {
+
+}
+
+.active-menu:visited, .active-menu:link {
+    font-weight: bold;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+header .menu div {
+    text-align: center;
+    margin: 0.5em;
+    text-transform: uppercase;
+    border: none;
+}
+
+header .menu a:hover {
+    font-weight: bold;
+    letter-spacing: 0.1em; 
+    color: white !important;
+}
+
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 5px #fff, 0 0 15px #fff, 0 0 25px #58afd1, 0 0 35px #58afd1, 0 0 45px #58afd1, 0 0 55px #58afd1, 0 0 65px #58afd1;
+  }
+  to {
+    text-shadow: 0 0 15px #fff, 0 0 25px #154da6, 0 0 35px #154da6, 0 0 45px #154da6, 0 0 55px #154da6, 0 0 65px #154da6, 0 0 75px #154da6;
+  }
+}
+
+footer .footer-wrapper {
+    font-size: 80%;
+    max-width: 90%;
+}
+
+.draw-border {
+  box-shadow: inset 0 0 0 4px #58cdd1;
+  color: #58afd1;
+  -webkit-transition: color 0.25s 0.0833333333s;
+  transition: color 0.25s 0.0833333333s;
+  position: relative;
+}
+
+.draw-border::before,
+.draw-border::after {
+  border: 0 solid transparent;
+  box-sizing: border-box;
+  content: '';
+  pointer-events: none;
+  position: absolute;
+  width: 0rem;
+  height: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.draw-border::before {
+  border-bottom-width: 4px;
+  border-left-width: 4px;
+}
+
+.draw-border::after {
+  border-top-width: 4px;
+  border-right-width: 4px;
+}
+
+.draw-border:hover {
+  color: #ffe593;
+}
+
+.draw-border:hover::before,
+.draw-border:hover::after {
+  border-color: #eb196e;
+  -webkit-transition: border-color 0s, width 0.25s, height 0.25s;
+  transition: border-color 0s, width 0.25s, height 0.25s;
+  width: 100%;
+  height: 100%;
+}
+
+.draw-border:hover::before {
+  -webkit-transition-delay: 0s, 0s, 0.25s;
+  transition-delay: 0s, 0s, 0.25s;
+}
+
+.draw-border:hover::after {
+  -webkit-transition-delay: 0s, 0.25s, 0s;
+  transition-delay: 0s, 0.25s, 0s;
+}
+
+.btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  line-height: 1.3;
+  padding: 0.75em 1em;
+  letter-spacing: 0.05rem;
+  margin: 0.5em auto 0.5em auto;
+  width: 13rem;
+}
+
+.btn:focus {
+  outline: 2px dotted #55d7dc;
+}
+
+#content figure {
+    max-width: 95%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#content .logo {
+    display: inline-block;
+    margin: 0;
+}
+
+#content img.logo {
+    vertical-align: middle;
+    max-height: 15vh;
+    text-decoration: none;
+}
+
+#content figure.logo a {
+    text-decoration: none;
+}
+
+#content figure.logo img {
+    padding: 5px;
+    max-height: 15vh;
+    vertical-align: middle;
+    text-decoration: none;
+}
+
+#content:not(.portfolio) figure img {
+    /*width: initial;*/
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#content .slideshare {
+    max-width: 95%;
+    max-height: 100%;
+    height: 500px;
+    width: 600px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1em;
+}
+
+.portfolio-cards {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+.portfolio-cards .portfolio-list {
+    height: 20vh;
+}
+
+.portfolio-cards .portfolio-container img {
+    object-fit: contain;
+    height: 100%;
+	background: white;
+    width: 100%;
+}
+
+.portfolio-cards .portfolio-container h2 {
+    font-size: 20px;
+    display: block;
+}
+
+#content .main-img img {
+    object-fit: contain;
+    max-height: 45vh;
+    width: 100%;
+}

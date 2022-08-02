@@ -1,0 +1,23 @@
+Options -Indexes
+
+#RewriteEngine On
+#RewriteBase /ppapapan/
+#RewriteRule "^(.*)$" "afs/$1" [PT]
+
+
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /ppapapan/
+#RewriteRule ^index\.html$ - [L]
+#RewriteRule ^dagdag/(.*)$ http://dr-eamer.dyndns.org:3000/$1 [P,L]
+RewriteRule ^digiflow/?$ /ppapapan/projects/digiflow/ [NC,R=301,L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /ppapapan/404.html [L]
+</IfModule>
+
+#<Location "dagdag/">
+#   ProxyPass "http://dr-eamer.dyndns.org/"
+#</Location>
+# END WordPress
