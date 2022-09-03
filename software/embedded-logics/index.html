@@ -1,6 +1,6 @@
 <!doctype html><html lang=en><head>
-<title>Data-Driven Management & Digital Consulting Mastercourse - Petros Papapanagiotou</title>
-<link rel=canonical href=https://www.petrospap.com/posts/celonis-mastercourse-2022/>
+<title>HOL Light Embed - Petros Papapanagiotou</title>
+<link rel=canonical href=https://www.petrospap.com/software/embedded-logics/>
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1">
 <meta name=description content>
@@ -13,23 +13,23 @@
 <link rel=stylesheet href=https://www.petrospap.com/css/research.css media=screen>
 <link rel=stylesheet href=https://www.petrospap.com/css/effects.css media=screen>
 <link rel=stylesheet href=https://www.petrospap.com/css/home.css media=screen>
-<meta property="og:title" content="Data-Driven Management & Digital Consulting Mastercourse">
-<meta property="og:description" content="📢 3 Week Mastercourse by Celonis - hosted by AIAI
-📅 Online launch: 21 June 2022 2:00pm
-PDF   Brochure
-👉 Register here 👈
- The Course Learn together with Germany’s and New York’s most valuable startup Celonis what the Management of tomorrow will look like in a world that is more digitized than ever. Celonis helps organizations track their internal processes based on digital footprints in IT systems.">
+<meta property="og:title" content="HOL Light Embed">
+<meta property="og:description" content="I have developed a generic framework to perform object level reasoning with embedded logics in HOL Light. It provides procedural tactics inspired by Isabelle&rsquo;s rule/erule/drule/frule. It also supports correspondences with computational terms in the style of Curry-Howard.
+It is available under the BSD-3-Clause License on GitHub: https://github.com/PetrosPapapa/hol-light-embed
+Additional information is available in this publication.
+A step-by-step tutorial with a detailed example is available here.
+What this library does Assuming you have an inductively defined logic encoded in HOL, the library allows you to prove object level theorems within your embedded logic.">
 <meta property="og:type" content="article">
-<meta property="og:url" content="https://www.petrospap.com/posts/celonis-mastercourse-2022/"><meta property="article:section" content="posts">
-<meta property="article:modified_time" content="2022-06-13T11:03:07+01:00">
-<meta itemprop=name content="Data-Driven Management & Digital Consulting Mastercourse">
-<meta itemprop=description content="📢 3 Week Mastercourse by Celonis - hosted by AIAI
-📅 Online launch: 21 June 2022 2:00pm
-PDF   Brochure
-👉 Register here 👈
- The Course Learn together with Germany’s and New York’s most valuable startup Celonis what the Management of tomorrow will look like in a world that is more digitized than ever. Celonis helps organizations track their internal processes based on digital footprints in IT systems.">
-<meta itemprop=dateModified content="2022-06-13T11:03:07+01:00">
-<meta itemprop=wordCount content="343">
+<meta property="og:url" content="https://www.petrospap.com/software/embedded-logics/"><meta property="article:section" content="software">
+<meta property="article:modified_time" content="2022-08-11T02:37:18+01:00">
+<meta itemprop=name content="HOL Light Embed">
+<meta itemprop=description content="I have developed a generic framework to perform object level reasoning with embedded logics in HOL Light. It provides procedural tactics inspired by Isabelle&rsquo;s rule/erule/drule/frule. It also supports correspondences with computational terms in the style of Curry-Howard.
+It is available under the BSD-3-Clause License on GitHub: https://github.com/PetrosPapapa/hol-light-embed
+Additional information is available in this publication.
+A step-by-step tutorial with a detailed example is available here.
+What this library does Assuming you have an inductively defined logic encoded in HOL, the library allows you to prove object level theorems within your embedded logic.">
+<meta itemprop=dateModified content="2022-08-11T02:37:18+01:00">
+<meta itemprop=wordCount content="250">
 <meta itemprop=keywords content>
 </head>
 <body>
@@ -97,66 +97,43 @@ PDF   Brochure
 /
 </span>
 <span>
-<a href=https://www.petrospap.com/posts/>Posts</a>
+<a href=https://www.petrospap.com/software/>Software</a>
 /
 </span>
 <span class=active>
-<a href=https://www.petrospap.com/posts/celonis-mastercourse-2022/>Data-Driven Management & Digital Consulting Mastercourse</a>
+<a href=https://www.petrospap.com/software/embedded-logics/>HOL Light Embed</a>
 </span>
 </div>
-<main id=content class=posts>
-<h1>Data-Driven Management & Digital Consulting Mastercourse</h1>
-<p>
-<div class=center style=text-align:center;margin-left:auto;margin-right:auto>
-<br>
-<figure class=logo><img src=https://raw.githubusercontent.com/PetrosPapapa/media/master/images/logos/celonis-x-aiai.png alt="logos of Celonis and AIAI">
-</figure>
-</p>
-</div>
-<p>📢 <strong>3 Week Mastercourse by <a href=https://www.celonis.com/>Celonis</a> - hosted by <a href=https://web.inf.ed.ac.uk/aiai>AIAI</a></strong><br>
-📅 Online launch: <strong>21 June 2022 2:00pm</strong><br>
-<span class=icon><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="3 3 16 16" aria-hidden="true" role="img"><title>PDF</title><path d="m344.73 547.77c-.339-.334-1.092-.511-2.237-.526-.775-.009-1.708.06-2.689.197-.439-.254-.892-.529-1.248-.862-.956-.893-1.755-2.133-2.252-3.495.032-.127.06-.239.086-.353.0.0.539-3.06.396-4.094-.02-.142-.032-.183-.07-.293l-.047-.12c-.147-.338-.434-.696-.884-.676l-.264-.008h-.008c-.502.0-.912.257-1.019.641-.327 1.204.001 3.01.621 5.339l-.156.38c-.437 1.066-.985 2.14-1.469 3.087l-.063.123c-.509.995-.97 1.841-1.389 2.556l-.432.228c-.031.017-.772.408-.946.513-1.473.88-2.449 1.878-2.611 2.671-.052.253-.013.576.249.726l.418.21c.181.091.372.137.568.137 1.049.0 2.267-1.307 3.946-4.236 1.938-.631 4.143-1.155 6.077-1.444 1.473.83 3.285 1.406 4.429 1.406.203.0.378-.019.52-.057.219-.058.404-.183.517-.353.222-.334.267-.794.207-1.265-.018-.14-.13-.313-.25-.431m-15.672 5.583c.191-.523.949-1.557 2.069-2.475.07-.057.244-.22.403-.371-1.171 1.868-1.955 2.612-2.471 2.846m6.633-15.274c.337.0.529.85.545 1.647s-.171 1.356-.402 1.77c-.192-.613-.284-1.579-.284-2.21.0.0-.014-1.207.141-1.207m-1.979 10.885c.235-.421.479-.864.729-1.335.609-1.152.993-2.053 1.28-2.793.57 1.036 1.279 1.917 2.113 2.623.104.088.214.177.33.265-1.696.336-3.162.744-4.452 1.24m10.692-.096c-.103.065-.399.102-.589.102-.614.0-1.374-.281-2.44-.738.409-.03.785-.046 1.121-.046.616.0.799-.003 1.401.151.602.154.61.466.507.53m5.99564-2.78693a14.238686 14.238686.0 01-14.23869 14.23868 14.238686 14.238686.0 01-14.23868-14.23868 14.238686 14.238686.0 0114.23868-14.23869 14.238686 14.238686.0 0114.23869 14.23869" fill="#d24d57" transform="matrix(.56185 0 0 .56185-177.87-295.81)"/></svg>
+<main id=content class=software>
+<h1>HOL Light Embed</h1>
+<div class=tags>
+<div class=portfolio-tags>
+<span class=icon><svg width="18" height="18" viewBox="0 0 115 115" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img"><title>Link</title><path d="M70.577 44.423c11.476 11.476 12.214 29.713 2.19 42.038-1.402 1.736-.625.868-19.078 19.321-12.285 12.285-32.18 12.296-44.47.0-12.29-12.284-12.294-32.176.0-44.47 7.36-7.362 11.642-11.657 14.242-14.253 1.676-1.674 4.566-.53 4.601 1.84.042 2.862.4 5.712 1.066 8.496a2.68 2.68.0 01-.72 2.515L18.112 70.206c-7.357 7.362-7.387 19.292.0 26.684 7.361 7.357 19.292 7.386 26.683.0L61.683 80c7.348-7.351 7.362-19.32.0-26.682a18.805 18.805.0 00-5.125-3.645c-1.038-.502-1.613-1.629-1.473-2.773a11.616 11.616.0 013.327-6.83l.983-.982a2.68 2.68.0 013.09-.516 31.268 31.268.0 018.092 5.851zm35.205-35.205c-12.292-12.296-32.186-12.285-44.47.0-18.454 18.453-17.677 17.585-19.08 19.32-10.023 12.326-9.285 30.563 2.19 42.039a31.268 31.268.0 008.092 5.85 2.68 2.68.0 003.091-.515l.983-.982a11.614 11.614.0 003.327-6.83c.14-1.144-.435-2.271-1.473-2.773a18.801 18.801.0 01-5.125-3.645c-7.362-7.362-7.348-19.33.0-26.681l16.889-16.89c7.391-7.387 19.322-7.358 26.683.0 7.387 7.39 7.357 19.321.0 26.683L86.591 55.09a2.68 2.68.0 00-.719 2.515 38.927 38.927.0 011.066 8.497c.035 2.368 2.925 3.513 4.602 1.84 2.6-2.596 6.88-6.892 14.242-14.253 12.293-12.294 12.288-32.187.0-44.471z"/></svg>
 </span>
-<a href=../../docs/Celonis%20Mastercourse_Edinburgh_21%20June%2022.pdf>Brochure</a><br>
-👉 <a href=https://forms.office.com/r/ymzBLwgVfH>Register here</a> 👈</p>
-<hr>
-<h2 id=the-course>The Course</h2>
-<p>Learn together with Germany’s and New York’s most valuable startup Celonis what the Management of tomorrow will look like in a world that is more digitized than ever. Celonis helps organizations track their internal processes based on digital footprints in IT systems. With this Celonis has turned into the market leader for Executive Management Technology with customers like Unilever, Coca Cola or BMW. Celonis uses Process Mining technology as well as different AI and ML capabilities to reveal insights into what is happening in an organization and to provide direct recommendations.</p>
-<p>In this Mastercourse you will learn about trends in Digital Transformation and Data Driven Management and how process-oriented data science can facilitate an analytical viewpoint internal organizations. You will furthermore gain business user skills the Celonis software and how to use it in a management and management consulting context.</p>
-<h2 id=what-you-will-learn>What you will learn</h2>
-<ul>
-<li>Discuss & understand the challenges and trends that Digital Transformation poses on executive management and strategic consulting today.</li>
-<li>Apply process mining skills to detect and narrow down process inefficiencies.</li>
-<li>Become a skilled user of the Celonis technology at Business User level.</li>
-<li>Identify and quantify business-relevant results as well as opportunities for process improvement.</li>
-<li>Derive executive decision from process insights.</li>
-</ul>
-<h2 id=content-overview>Content Overview</h2>
-<p>(<em>approx. 4-5h per week</em>)</p>
-<ul>
-<li><strong>Week 1</strong>: Kick-Off Workshop (live); Start of Online Training with Theory Introduction to Process Mining and Celonis Software Training</li>
-<li><strong>Week 2</strong>: Online Learning: Celonis Software Training; Introduction to Business Case &ldquo;Pizzeria Mamma Mia&rdquo; (online)</li>
-<li><strong>Week 3</strong>: Online Learning: Deadline for Business Case Pizzeria Mamma Mia (online), Process Mining and Prediction</li>
-</ul>
-<h2 id=timing>Timing</h2>
-<ul>
-<li>Kickoff workshop: <strong>21 June 2-3pm BST via Zoom</strong></li>
-<li>3-week online training at your own pace</li>
-<li><strong>A certificate will be awarded to successful candidates at the end of the 3 weeks!</strong></li>
-</ul>
-<h2 id=prerequisites>Prerequisites</h2>
-<ul>
-<li>Business interest</li>
-<li>No technical knowledge required</li>
-</ul>
-<blockquote>
-<p>It was a very interesting course, I learned lots of new things, it was definitely worth it. - <em>Anonymous feedback 2021</em></p>
-</blockquote>
+<a target=_blank href=https://github.com/PetrosPapapa/hol-light-embed>https://github.com/PetrosPapapa/hol-light-embed</a>
+</div>
+<div class=portfolio-tags>
+<span class=icon><svg width="18" height="18" viewBox="0 0 115 115" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img"><path d="M77.577 51.23a1.807 1.807.0 00-2.2.342l-27.562 27.79a1.807 1.807.0 01-2.2.342l-14.008-9.702a1.807 1.807.0 00-2.2.342l-1.952 1.968c-.287.22-.456.568-.455.936.001.37.172.716.46.934L45.637 86.77a1.807 1.807.0 002.2-.342l31.709-31.97c.287-.22.456-.567.455-.936a1.175 1.175.0 00-.46-.933l-1.963-1.36z"/><path d="M97.304 20H80.512c-.041.34-.063.683-.064 1.026a5.986 5.986.0 001.256 4.1c.054.003.103.02.157.025a4.881 4.881.0 011.865-.025c3.05.562 4.984 3.907 4.32 7.47-.666 3.563-3.678 5.996-6.728 5.433a4.932 4.932.0 01-2.437-1.258c-6.018-1.378-10.445-7.795-10.445-15.745.0-.347.023-.685.04-1.026H34.579c-.041.34-.063.683-.064 1.026a5.986 5.986.0 001.256 4.1c.054.003.103.02.157.025a4.881 4.881.0 011.865-.025c3.05.562 4.984 3.907 4.32 7.47-.666 3.563-3.678 5.996-6.728 5.433a4.932 4.932.0 01-2.437-1.258c-6.018-1.378-10.445-7.795-10.445-15.745.0-.22.019-.434.025-.652a9.788 9.788.0 00-5.697 4.471 9.683 9.683.0 00-2.65 4.764L1.158 92.871c-.965 4.689 2.6 8.503 7.948 8.503h6.334v2.673c-.077 5.41 4.263 9.861 9.705 9.953h72.16c5.438-.095 9.774-4.546 9.694-9.953V29.953c.08-5.407-4.256-9.858-9.695-9.953zM10.078 96.653c-2.378.0-3.964-1.697-3.535-3.782L16.637 43.84h80.787L87.331 92.871a5.254 5.254.0 01-5.091 3.782H10.078zm91.535 7.394c.036 2.403-1.891 4.382-4.308 4.424h-72.16c-2.42-.04-4.352-2.018-4.32-4.424v-2.673h60.443c5.348.0 10.484-3.814 11.449-8.503l8.897-43.215v54.391z"/><path d="M34.814 33c1.243.0 2.251-1.057 2.251-2.36.0-1.305-1.008-2.362-2.25-2.362-2.04.0-4.313-3.194-4.313-7.778s2.272-7.778 4.312-7.778c1.227.0 2.536 1.163 3.386 3.084H43C41.716 11.19 38.578 8 34.814 8 29.871 8 26 13.49 26 20.5c0 7.009 3.871 12.5 8.814 12.5z"/></svg>
+</span>
+<span>2019-2020</span>
+</div>
+</div>
+<div class=main-img>
+<img title="HOL Light Embed" alt src=https://raw.githubusercontent.com/PetrosPapapa/media/master/images/embeddedLogic.png>
+</div>
+<p>I have developed a generic framework to perform object level reasoning with embedded logics in <a href=https://www.cl.cam.ac.uk/~jrh13/hol-light/>HOL Light</a>. It provides procedural tactics inspired by <a href=https://isabelle.in.tum.de/>Isabelle</a>&rsquo;s rule/erule/drule/frule. It also supports correspondences with computational terms in the style of Curry-Howard.</p>
+<p>It is available under the BSD-3-Clause License on GitHub: <a href=https://github.com/PetrosPapapa/hol-light-embed>https://github.com/PetrosPapapa/hol-light-embed</a></p>
+<p>Additional information is available in <a href=https://arxiv.org/abs/2101.03808>this publication</a>.</p>
+<p>A step-by-step tutorial with a detailed example is available <a href=https://petrospapapa.github.io/hol-light-embed/CurryHoward.html>here</a>.</p>
+<h2 id=what-this-library-does>What this library does</h2>
+<p>Assuming you have an inductively defined logic encoded in HOL, the library allows you to prove object level theorems within your embedded logic. All the boilerplate around rule matching and meta-level term management is taken care of automatically without any additional coding. Assuming an encoding of a constructive correspondence of a logic to some computational calculus (in the style of Curry-Howard) the library additionally automates the construction of the terms as the proof progresses. This is accomplished through the use of metavariables and delayed instantiation. In effect, this allows the construction of any program via proof using any logic correspondence that can be encoded in HOL Light in the ways described below. It is worth noting that the tactics can be used programmatically as well, e.g. towards automated proof tools for the encoded logic.</p>
+<h2 id=what-this-library-does-not-do>What this library does NOT do</h2>
+<p>It does <strong>not</strong> allow you to perform any meta-level reasoning (such as cut-elimination proofs) as the derivation semantics of the logic are mapped to HOL implication. At this level it is not possible to reason about the semantics of the embedded logic.</p>
 </main>
 </div>
 <footer>
 <div class=footer-wrapper>
-<p>© Petros Papapanagiotou &#9830; Last Modified: <em>13 Jun 2022</em></p>
+<p>© Petros Papapanagiotou &#9830; Last Modified: <em>11 Aug 2022</em></p>
 <p>Powered by <a href=https://gohugo.io/ target=_blank rel=external><img src=https://gohugo.io/favicon-16x16.png alt> Hugo</a> and <a href=https://www.orgmode.org/ target=_blank rel=external><img src=https://orgmode.org/resources/img/org-mode-unicorn.svg alt width=16 height=16> org-mode</a> via <a href=">https://ox-hugo.scripter.co/" target=_blank rel=external>ox-hugo</a></p><p>Theme: <a href=https://github.com/bjacquemet/personal-web target=_blank rel=external>Personal Web</a> (modified) &#9830; No javascript in this page</p>
 </div>
 </footer>
