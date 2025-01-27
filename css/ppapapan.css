@@ -142,6 +142,7 @@ footer .footer-wrapper {
 
 #content figure.logo a {
     text-decoration: none;
+    border: none;
 }
 
 #content figure.logo img {
