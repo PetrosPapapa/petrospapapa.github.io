@@ -170,6 +170,11 @@ footer .footer-wrapper {
     margin-bottom: 1em;
 }
 
+#content .main-img {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
 #content .main-img img {
     object-fit: contain;
     max-height: 45vh;
@@ -192,6 +197,25 @@ a.icon {
   border: none;
 }
 
+.tag-cloud {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem; /* Optional spacing between tags */
+}
+
+.tag-cloud a {
+  line-height: 1;
+  text-decoration: none;
+  border: none;
+  display: inline-block;
+  transition: 0.3s ease all;
+}
+
+.tag-cloud a:hover {
+    transform: scale(1.3);
+}
+
 .simple-cards {
     display: grid;
     grid-gap: 1rem;
@@ -200,6 +224,14 @@ a.icon {
 
 .simple-cards .card-container {
     height: 20vh;
+    max-height: 20em; 
+}
+
+.simple-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
 }
 
 .simple-card img {
@@ -232,16 +264,14 @@ a.icon {
 
 .detail-cards .detail-card-container {
     height: 38vh;
+    max-height: 25em;
 }
 
 .detail-card {
-  display: flex;
-  flex-direction: column;
   background: #fff;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  transition: transform 0.2s;
+  transition: transform 0.2s;  
   height: 100%;
 }
 
@@ -250,37 +280,55 @@ a.icon {
   height: 5rem;
 }
 
+.detail-card .side-image {
+  width: 6rem;
+  height: 100%;
+}
+
 .detail-card img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
+.detail-card .vertical {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  width: 100%;
+  min-height: 0;
+  height: 100%;
+}
+
+
+.detail-card .horizontal {
+  display: flex;
+  flex-direction: row;
+  min-width: 0;
+  width: 100%;
+  min-height: 0;
+  height: 100%;
+}
+
 .detail-card h2 {
-    font-size: 20px;
-    display: block;
-}
-
-.detail-card .content {
-    display: flex;
-    flex-direction: column;
-    padding: 1rem 1rem 0.5rem 1rem;
-    min-height: 0;
-}
-
-.detail-card .content h2 {
-  margin: 0 0 0.5rem;
+  display: block;
+  padding: 0.7rem 1rem 0;
+  margin: 0;
   font-size: 1.25rem;
   line-height: normal;
 }
 
-.detail-card .job-date {
+.detail-card .card-info {
+  padding: 0.3rem 1rem 0;
   font-size: 0.8rem;
   color: #777;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
 }
 
-.detail-card .content .summary {
-  margin: 0.5rem 0;
+.detail-card .summary {
+  padding: 0.5rem 1rem;
   font-size: 0.9rem;
   overflow: hidden;
   flex-shrink: 1;
@@ -294,13 +342,23 @@ a.icon {
   text-align: left;
 }
 
+.detail-card .card-footer {
+  padding: 0 1rem;
+  font-size: 0.8rem;
+  color: #777;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;   
+  margin-top: auto;
+  z-index: 20;
+}
+
 .tech-icons {
   display: flex;
   gap: 0.1rem;
   flex-wrap: wrap;
   align-items: center;
-  margin-top: auto;
-  z-index: 20;
 }
 
 .card-link {
@@ -309,6 +367,7 @@ a.icon {
   z-index: 10;
   content: "";
   display: block;
+  border: none !important;
 }
 
 .portfolio-cards {
@@ -321,6 +380,7 @@ a.icon {
 
 .portfolio-cards .portfolio-card-container {
     height: 38vh;
+    max-height: 25em;
 }
 
 .tech-term-cards {
@@ -331,4 +391,15 @@ a.icon {
 
 .tech-term-cards .card-container {
     height: 110px;
+}
+
+.post-cards {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 1rem;
+}
+
+.post-cards .post-card-container {
+  height: 11.5rem;
 }
